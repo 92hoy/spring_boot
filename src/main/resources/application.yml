@@ -1,0 +1,16 @@
+server:
+    port: 8111
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/hoyoy?characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  mvc:
+    view:
+        prefix: /WEB-INF/jsp/
+        suffix: .jsp
+mybatis:
+  type-aliases-package: com.spring_backend
+  
+  mapper-locations: com/spring_backend/dao/api/test/*.xml
